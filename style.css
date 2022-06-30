@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*é a raiz do documento HTML aplicada no CSS é oque possui a maior especificidade aqui podemos trabalhar com variaveis de cor sem usando ( -- )*/
+:root {
+  --primary-color: hsl(170, 100%, 26%);
+  --headline: hsl(210, 11%, 15%);
+  --first-text: hsl(204, 46%, 32%);
+  --white: hsl(00, 100%, 100%);
+  --background-color: hsl(240, 28%, 81%);
+  --hover: hsl(204, 47%, 49%);
+  --border-nav: hsl(51, 100%, 50%);
+  --color-zap: hsl(113, 67%, 41%);
+  --color-button-services: hsl(244, 44%, 43%);
+  --card-border-color: hsl(0, 0%, 0%);
+  font-size: 62.5%; /* dentro destas condições de root 1rem = 10px */
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  text-align: center;
+  text-size-adjust: 1.5rem;
+  background-color: var(--white);
+}
+
+.logo {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.logo-img {
+  height: 15rem;
+  width: 40rem;
+}
+
+.menu {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 12rem;
+  font-weight: 500;
+}
+
+.nav {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: black
+}
+
+a:visited{
+  text-decoration: var(--headline);
+}
+
+a:hover {
+  color: var(--hover);
+  /* propriedade para mudança de cursor */
+  cursor: pointer;
+  text-decoration: underline;
+  /* propriedade para adicionar um atributo de transição */
+  transition: 0.5s;
+}
+
+a:active{
+  color: var(--color-zap);
+}
+
+/* texto de impacto visual */
+.macro-text {
+  font-size: 9rem;
+  color: var(--first-text);
+  opacity: 0.8;
+}
+
+
+.macro-img {
+  display: block;
+  width: 100%;
+}
+/* primeira IMG de marketing */
+/* trabalhando especificidade para a img respeitar o tamanho da caixa */
+.macro-img img {
+  display: block;
+  width: 100%;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin: 4rem;
+}
+
+/* caixa que agrupa os cards */
+.servicos {
+  display: flex;
+  justify-items: space-between;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Comando para suavizar o scroll automatico */
+html{
+  scroll-behavior: smooth;
+}
+
+/* layout dos cards */
+.card {
+  height: 50rem;
+  width: 90rem;
+  margin: auto;
+  border: 1px solid var(--headline);
+}
+
+/* formatação da img dentro do card */
+.card img{
+  width: 100%;
+}
+
+/* descrição do card */
+.card-description{
+  font-size: 2.5rem;
+  border-bottom: 1px solid var(--card-border-color);
+  padding: 2rem;
+}
+
+/* card-description-bottom */
+
+.card-description-bottom{
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+/* formatações de botão do whatsapp */
+
+.whatsapp{
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+}
+
+/*
+.box-icon-zap-text{
+  font-size: 2rem;
+  font-style: var(--color-zap)
+}
+
+.box-icon-zap-text a:hover{
+text-decoration: none;
+}
+*/
+
+
+/* formatações do botão de retorno ao topo */
+
+/*
+#backToTop{
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTop.show{
+  opacity: 1;
+  visibility: visible;
+}
+*/
+
+
+
+
+/* Formatalçoes do email de contato */
+
+.orcamento-txt {
+  font-size: 6rem;
+  color: var(--first-text);
+  opacity: 0.8;
+  margin-top: 10rem;
+}
+
+.email-contato{
+  display: block;
+  margin: 2.5rem 1rem 10rem 1rem;
+}
+
+.email-box{
+width: 75%;
+padding: 1.7rem;
+margin: 0rem 0rem 2.5rem 0rem;
+}
+
+.email-text{
+display: block;
+font-size: 2rem;
+margin-bottom: 0rem;
+}
+
+.email-button{
+display: block;
+padding: 1.2rem;
+width: 78%;
+margin: 0rem auto 2.5rem auto;
+text-size-adjust: 1.5rem;
+}
+
+
+/* Caixa do mapa */
+.mapa-box{
+  display: block;
+  width: 100%;
+}
+
+/* layout do mapa */
+.mapa{
+  width: 100%;
+}
+
+
+/* rodapé */
+footer {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+/*  PAGE AGENDE ONLINE   */
+/*  PAGE AGENDE ONLINE   */
+/*  PAGE AGENDE ONLINE   */
+/*  PAGE AGENDE ONLINE   */
+/*  PAGE AGENDE ONLINE   */
+
+
+
+
+
+/* caixa que agrupa os cards */
+.servicos-agendamento {
+  display: flex;
+  justify-items: space-between;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* layout dos cards */
+.card-agendamento {
+  height: 50rem;
+  width: 90rem;
+  margin: 3.5rem auto;
+  border: 1px solid var(--headline);
+}
+
+/* formatação da img dentro do card */
+.card-agendamento img{
+  width: 100%;
+}
+
+/* descrição do card */
+.card-description-agendamento{
+  font-size: 2.5rem;
+  
+  padding: 2rem;
+}
+
+/* botões de agendamento de serviços */
+
+
+.agende-infraestrutura{
+padding: 1rem;
+color: var(--color-button-services);
+}
+
+.agende-redes{
+  padding: 1rem;
+  color: var(--color-button-services);
+}
+
+.agende-seguranca{
+  padding: 1rem;
+  color: var(--color-button-services);
+}
+
+                                  /* SOBRE */
+                                  /* SOBRE */
+                                  /* SOBRE */
+                                  /* SOBRE */
+                                  /* SOBRE */
+                                  /* SOBRE */
+                                  /* SOBRE */
+
+/* texto de impacto visual */
+.macro-text-sobre {
+  font-size: 9rem;
+  color: var(--first-text);
+  opacity: 0.8;
+}
+
+p{
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 2rem 5rem 5rem 5rem;
+}
+
+.macro-img-sobre {
+  display: block;
+  width: 100%;
+}
+/* primeira IMG de marketing */
+/* trabalhando especificidade para a img respeitar o tamanho da caixa */
+.macro-img-sobre img {
+  display: block;
+  width: 100%;
+}
+
+
+h3{
+  font-size: 2.5rem;margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+
+            /* SERVIÇOS */
+            /* SERVIÇOS */
+            /* SERVIÇOS */
+            /* SERVIÇOS */
+            /* SERVIÇOS */
+
+
+
+/* caixa que agrupa os cards */
+.servicos-servicos {
+  display: flex;
+  justify-items: space-between;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* layout dos cards */
+.card-servicos {
+  height: 50rem;
+  width: 90rem;
+  margin: auto;
+  border: 1px solid var(--headline);
+}
+
+/* formatação da img dentro do card */
+.card-servicos img{
+  width: 100%;
+}
+
+/* descrição do card */
+.card-description-servicos{
+  font-size: 2.5rem;
+  
+  padding: 2rem;
+}
+
+
+/* ORCAMENTO */
+/* ORCAMENTO */
+/* ORCAMENTO */
+/* ORCAMENTO */
+/* ORCAMENTO */
+
+
+/* texto de impacto visual */
+.macro-text-orcamento {
+  font-size: 6rem;
+  color: var(--first-text);
+  opacity: 0.8;
+}
+
+.titulo-orcamento{
+  margin: 5rem;
+}
+
+/* CONTATO */
+
+.macro-text-contato {
+  font-size: 7rem;
+  color: var(--first-text);
+  opacity: 0.8;
+}
+
+.telEemail{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  margin: 0.5rem 15.5rem 5rem 15.5rem;
+}

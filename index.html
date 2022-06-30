@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="O principal site para cuidar de sua T.I."
+    />
+    <title>De Castro Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <!--Logo-->
+      <div class="logo">
+        <div>
+          <img class="logo-img" src="img/logo1.png" alt="logo" />
+        </div>
+      </div>
+
+      <!--Menu de navegação-->
+      <!-- estão com alteração do teeste de Scroll-->
+      <nav class="menu">
+        <a class="nav" href="index.html">Início</a>
+        <a class="nav" href="sobre.html">Sobre</a>
+        <a class="nav" href="#servicos">Serviços</a>
+        <a class="nav" href="contato.html">Contato</a>
+        <a class="nav" href="https://www.instagram.com/decastro.tecnologia/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="img/icon-instagram.png"></a>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="macro-text">
+        Um serviço de tecnologia da informação mais inteligente
+      </h2>
+
+      <!--imagem de um profissional mexendo no computador-->
+      <div class="macro-img">
+        <img src="img/img-1.jpg" alt="" />
+      </div>
+
+      <!-- estão com alteração do teeste de Scroll-->
+      <h2 id="servicos">Nossos serviços</h2>
+
+      <!-- CARDS DE SERVIÇOS -->
+      <div class="servicos">
+        <div class="card">
+          <a>
+            <img src="img/card-1.jpg" alt="" />
+            <div class="card-description">Suporte técnico corporativo.</div>
+            <div class="card-description-bottom">
+              Atendimento remoto e presencial.<br>
+              Soluções para problemas de Hardware e Software.<br>
+              Configuração do Sistema Operacional.<br>
+              Consultoria e Adequação do setor de Tecnologia da sua empresa.
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a>
+            <img src="img/card-2.jpg" alt="" />
+            <div class="card-description">Serviços de rede.</div>
+            <div class="card-description-bottom">
+              Gestão de Redes Wi-Fi.<br>
+              Configuração do Active Directory (AD).<br>
+              Gestão de Pastas compartilhadas em rede.<br>
+              Backup em Nuvem Criptografado.<br> 
+            </div>
+          </a>
+        </div>
+
+        <div class="card">
+          <a>
+            <img src="img/card-3.jpg" alt="" />
+            <div class="card-description">Firewall e cyber segurança.</div>
+            <div class="card-description-bottom">
+              Appliance / BOX de Firewall Corporativo.<br>
+              Appliance / BOX de Gerenciamento de Múltiplas Redes Corporativas (integradas).<br>
+              Appliance / BOX de VPN, Proxy e Redundância.<br>
+              Monitoramento de Infraestrutura de TI em nuvem.<br>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- BOTÃO DE RETORNO AO TOPO DA PAGE-->
+          <!--
+            <a id="backToTop" href="index.html">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="#00856F"/>
+          <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 20L20 13L27 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          </a>
+        -->
+      
+
+      <!--WHATSAPP-->
+        <div class="box-icon-zap">
+          <a class="whatsapp" href="https://wa.me/5562982166903?text=Mande%20sua%20duvida%20aqui,%20que%20responderemos%20assim%20que%20possível" target="_blank">
+            <img src="img/icon-zap.svg">
+            <span class="box-icon-zap-text"><!--Fale Conosco.--></span>
+          </a> 
+        </div>     
+
+      <!--fORMULÁRIO DE REGISTRO DE CLIENTE/ ENVIAR EMAIL DIRETAMENTE-->
+      <p class="orcamento-txt">PEÇA UM ORÇAMENTO</p>
+      
+      <div class="email-contato">
+          <form action="https://formsubmit.co/leao12j@gmail.com" method="POST">
+            <label class="email-text" for="email" >E-mail</label>
+            <input class="email-box" type="text" name="name" placeholder="Escreva aqui seu e-mail." id="email" required>
+            <label class="email-text" for="message" >Mensagem</label>
+            <input class="email-box" type="text" name="message" placeholder="Escreva aqui sua menssagem." id="menssage" required>
+            <button class="email-button" type="submit">ENVIAR</button>
+          </form>
+      </div>
+
+      <!--Mapa do endereço de trabalho da empresa-->
+      <div class="mapa-box">
+      <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1623.8975463855413!2d-49.15262653788727!3d-14.524765759614827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b7bef68e8695963!2sDeCastro%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1655853274146!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+
+    <footer>
+      De Castro Tecnologia. Todos os direitos reservados &copy; &reg;
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
