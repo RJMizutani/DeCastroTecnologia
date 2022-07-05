@@ -236,65 +236,6 @@ footer {
   font-size: 1.2rem;
 }
 
-
-
-
-/*  PAGE AGENDE ONLINE   */
-/*  PAGE AGENDE ONLINE   */
-/*  PAGE AGENDE ONLINE   */
-/*  PAGE AGENDE ONLINE   */
-/*  PAGE AGENDE ONLINE   */
-
-
-
-
-
-/* caixa que agrupa os cards */
-.servicos-agendamento {
-  display: flex;
-  justify-items: space-between;
-  gap: 1rem;
-  font-size: 1.5rem;
-}
-
-/* layout dos cards */
-.card-agendamento {
-  height: 50rem;
-  width: 90rem;
-  margin: 3.5rem auto;
-  border: 1px solid var(--headline);
-}
-
-/* formatação da img dentro do card */
-.card-agendamento img{
-  width: 100%;
-}
-
-/* descrição do card */
-.card-description-agendamento{
-  font-size: 2.5rem;
-  
-  padding: 2rem;
-}
-
-/* botões de agendamento de serviços */
-
-
-.agende-infraestrutura{
-padding: 1rem;
-color: var(--color-button-services);
-}
-
-.agende-redes{
-  padding: 1rem;
-  color: var(--color-button-services);
-}
-
-.agende-seguranca{
-  padding: 1rem;
-  color: var(--color-button-services);
-}
-
                                   /* SOBRE */
                                   /* SOBRE */
                                   /* SOBRE */
@@ -323,7 +264,6 @@ p{
   width: 100%;
 }
 /* primeira IMG de marketing */
-/* trabalhando especificidade para a img respeitar o tamanho da caixa */
 .macro-img-sobre img {
   display: block;
   width: 100%;
@@ -343,104 +283,12 @@ h3{
             /* SERVIÇOS */
 
 
-/* caixa que agrupa os cards */
 
-BACKUP ANTIGA CONFIGURAÇÃO
-
-caixa que agrupa os cards
-
-.container {
-  display: flex;
-  justify-items: space-between;
-  gap: 1rem;
-  font-size: 1.5rem;
-  flex-wrap:wrap;
-  }
-  
-  layout dos cards
-  
-  .card-servicos {
-    height: 50rem;
-    width: 90rem;
-    margin: auto;
-    border: 1px solid var(--headline);
-  }
-  
-  formatação da img dentro do card
-  
-  .card-servicos img{
-    width: 100%;
-  }
-  
-  descrição do card
-  
-  .card-description-servicos{
-    font-size: 2.5rem;
-    
-    padding: 2rem;
-  }
-  
-
-
-
-
-layout dos cards 
-.card {
-  height: 50rem;
-  width: 90rem;
-  margin: auto;
-  border: 1px solid var(--headline);
-}
- formatação da img dentro do card 
-.card img{
-  width: 100%;
-}
-
- descrição do card 
-.card-description{
-  font-size: 2.5rem;
-  border-bottom: 1px solid var(--card-border-color);
-  padding: 2rem;
-}
-
- card-description-bottom 
-
-.card-description-bottom{
-  font-size: 1.8rem;
-  text-align: center;
-  margin: 1rem;
-}
-
-
-
-/* grid . old
-.container{
-  width: 100%;
-  border: 2px solid red;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-
-.card-servicos {
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
-  }
-
-  .card{
-  background: rgb(0 0 255 / 14%);
-  border: 2px solid blue;
-  }
-*/
-
-
-
-/* ORCAMENTO */
-/* ORCAMENTO */
-/* ORCAMENTO */
-/* ORCAMENTO */
-/* ORCAMENTO */
+            /* ORCAMENTO */
+            /* ORCAMENTO */
+            /* ORCAMENTO */
+            /* ORCAMENTO */
+            /* ORCAMENTO */
 
 
 /* texto de impacto visual */
@@ -542,6 +390,12 @@ layout dos cards
    color: var(--hover);
    opacity: 0.8;
    margin-top: 10rem;
+ }
+
+ /*SOBRE*/
+
+ .macro-text-sobre{
+  font-size: 4.5rem;
  }
  
  }
