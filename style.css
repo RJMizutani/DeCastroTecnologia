@@ -11,6 +11,7 @@
   --white: hsl(00, 100%, 100%);
   --background-color: hsl(240, 28%, 81%);
   --hover: hsl(204, 47%, 49%);
+  --menu-bar: hsl(258, 42%, 9%);
   --color-zap: hsl(113, 67%, 41%);
   --color-button-services: hsl(244, 44%, 43%);
   --card-border-color: hsl(0, 0%, 0%);
@@ -50,7 +51,7 @@ body {
 
 .menu{
   margin: 2rem 0rem 7rem 0rem;
-  background-color: beige;
+  background-color: var(--menu-bar);
 }
 
 .nav {
@@ -60,7 +61,7 @@ body {
 }
 
 a:link, a:visited{
-  color: black;
+  color: var(--white);
 }
 
 a:hover{
@@ -251,6 +252,7 @@ footer {
   color: var(--hover);
   opacity: 0.8;
   text-transform:  uppercase;
+  margin-top: 15rem;
 }
 
 p{
