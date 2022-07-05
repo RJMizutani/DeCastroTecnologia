@@ -3,17 +3,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*é a raiz do documento HTML aplicada no CSS é oque possui a maior especificidade aqui podemos trabalhar com variaveis de cor sem usando ( -- )*/
 :root {
-  --primary-color: hsl(170, 100%, 26%);
-  --headline: hsl(210, 11%, 15%);
-  --first-text: hsl(204, 46%, 32%);
   --white: hsl(00, 100%, 100%);
   --background-color: hsl(240, 28%, 81%);
   --hover: hsl(204, 47%, 49%);
-  --border-nav: hsl(51, 100%, 50%);
   --color-zap: hsl(113, 67%, 41%);
   --color-button-services: hsl(244, 44%, 43%);
   --card-border-color: hsl(0, 0%, 0%);
@@ -21,87 +18,163 @@
   font-family: 'DM Sans', sans-serif;
 }
 
+              /*CONFIGURAÇÕES GERAIS DA PAGINA*/
+              /*CONFIGURAÇÕES GERAIS DA PAGINA*/
+              /*CONFIGURAÇÕES GERAIS DA PAGINA*/
+              /*CONFIGURAÇÕES GERAIS DA PAGINA*/
 body {
   text-align: center;
   text-size-adjust: 1.5rem;
   background-color: var(--white);
 }
 
+
+            /*CONFIGURAÇÃO DO CABEÇALHO*/
+            /*CONFIGURAÇÃO DO CABEÇALHO*/
+            /*CONFIGURAÇÃO DO CABEÇALHO*/
+            /*CONFIGURAÇÃO DO CABEÇALHO*/
 .logo {
   margin: 1rem;
   font-size: 2.5rem;
 }
 
 .logo-img {
-  height: 15rem;
-  width: 40rem;
+  width: 95%;
+  height: 95%;
+
+  max-width: 35rem;
+  max-height: 15rem;
+  padding: 1rem;
 }
 
-.menu {
-  margin-top: 1rem;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-  margin-bottom: 12rem;
-  font-weight: 500;
+
+.menu{
+  margin: 2rem 0rem 7rem 0rem;
+  background-color: beige;
 }
 
 .nav {
   padding: 1rem;
   font-size: 2rem;
-}
-
-a:link {
   text-decoration: none;
-  color: black
 }
 
-a:visited{
-  text-decoration: var(--headline);
+a:link, a:visited{
+  color: black;
 }
 
-a:hover {
+a:hover{
   color: var(--hover);
-  /* propriedade para mudança de cursor */
-  cursor: pointer;
-  text-decoration: underline;
-  /* propriedade para adicionar um atributo de transição */
-  transition: 0.5s;
 }
 
-a:active{
-  color: var(--color-zap);
-}
-
-/* texto de impacto visual */
 .macro-text {
-  font-size: 9rem;
-  color: var(--first-text);
+  font-size: 6.5rem;
+  padding: 0.2rem;
+  color: var(--hover);
+  opacity: 0.8;
+  text-transform:  uppercase;
+}
+
+h2{
+  font-size: 6rem;
+  color: var(--hover);
   opacity: 0.8;
 }
 
-
-.macro-img {
-  display: block;
+.macro-img img{
   width: 100%;
-}
-/* primeira IMG de marketing */
-/* trabalhando especificidade para a img respeitar o tamanho da caixa */
-.macro-img img {
-  display: block;
-  width: 100%;
+  height: 100%;
+  margin: 1rem 0rem 4rem 0rem;
+  opacity: 0.8;
 }
 
-h2 {
-  font-size: 4.5rem;
-  font-weight: 500;
-  margin: 4rem;
-}
 
 /* Comando para suavizar o scroll automatico */
 html{
   scroll-behavior: smooth;
 }
 
+/* caixa que agrupa os cards */
+.servicos {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  font-size: 1.5rem;
+}
+
+/* layout dos cards */
+.card {
+  height: 100%;
+  width: 100%;
+  max-width: 60rem;
+  max-height: 25rem;
+  margin: 10rem 1rem 10rem 1rem;
+  border: 1px solid var(--headline);
+}
+
+/* formatação da img dentro do card */
+.card img{
+  width: 100%;
+}
+
+/* descrição do card */
+.card-description{
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+/* card-description-bottom */
+
+.card-description-bottom{
+  font-size: 1.8rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+            /* Area de serviços dos cards de baixo */
+            /* Area de serviços dos cards de baixo */
+            /* Area de serviços dos cards de baixo */
+            /* Area de serviços dos cards de baixo */
+
+
+/* caixa que agrupa os cards */
+.servicos-abaixo {
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  font-size: 1.5rem;
+}
+
+/* layout dos cards-abaixo */
+.card-abaixo {
+  height: 100%;
+  width: 100%;
+  max-width: 60rem;
+  max-height: 25rem;
+  margin: 20rem 1rem 30rem 1rem;
+  border: 1px solid var(--headline);
+}
+
+/* formatação da img dentro do card-abaixo */
+.card-abaixo img{
+  width: 100%;
+}
+
+/* descrição do card-abaixo */
+.card-description-abaixo{
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+/* card-description-bottom-abaixo */
+
+.card-description-bottom-abaixo{
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem;
+}
 
 
 /* formatações de botão do whatsapp */
@@ -112,43 +185,11 @@ html{
   right: 2.5rem;
 }
 
-/*
-.box-icon-zap-text{
-  font-size: 2rem;
-  font-style: var(--color-zap)
-}
-
-.box-icon-zap-text a:hover{
-text-decoration: none;
-}
-*/
-
-
-/* formatações do botão de retorno ao topo */
-
-/*
-#backToTop{
-  position: fixed;
-  bottom: 1rem;
-  right: 2.5rem;
-  opacity: 0;
-  visibility: hidden;
-}
-
-#backToTop.show{
-  opacity: 1;
-  visibility: visible;
-}
-*/
-
-
-
-
 /* Formatalçoes do email de contato */
 
 .orcamento-txt {
   font-size: 6rem;
-  color: var(--first-text);
+  color: var(--hover);
   opacity: 0.8;
   margin-top: 10rem;
 }
@@ -178,7 +219,6 @@ margin: 0rem auto 2.5rem auto;
 text-size-adjust: 1.5rem;
 }
 
-
 /* Caixa do mapa */
 .mapa-box{
   display: block;
@@ -190,14 +230,11 @@ text-size-adjust: 1.5rem;
   width: 100%;
 }
 
-
 /* rodapé */
 footer {
   margin-top: 3rem;
   font-size: 1.2rem;
 }
-
-
 
 
 
@@ -268,9 +305,11 @@ color: var(--color-button-services);
 
 /* texto de impacto visual */
 .macro-text-sobre {
-  font-size: 9rem;
-  color: var(--first-text);
+  font-size: 6.5rem;
+  padding: 0.2rem;
+  color: var(--hover);
   opacity: 0.8;
+  text-transform:  uppercase;
 }
 
 p{
@@ -415,17 +454,142 @@ layout dos cards
   margin: 5rem;
 }
 
-/* CONTATO */
+            /* CONTATO */
+            /* CONTATO */
+            /* CONTATO */
+            /* CONTATO */
+            /* CONTATO */
+            /* CONTATO */
 
 .macro-text-contato {
-  font-size: 7rem;
-  color: var(--first-text);
+  font-size: 6.5rem;
+  padding: 0.2rem;
+  color: var(--hover);
   opacity: 0.8;
+  text-transform:  uppercase;
 }
 
 .telEemail{
-  display: flex;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+  grid-gap: 1rem;
+  justify-items: center;
+  font-size: 1.5rem;
+  margin: 3rem;
+  
+  /*display: flex;
   justify-content: space-between;
   font-size: 1.8rem;
-  margin: 0.5rem 15.5rem 5rem 15.5rem;
+  margin: 0.5rem 15.5rem 5rem 15.5rem;*/
+}
+
+
+            /*MEDIAQUERY*/
+            /*MEDIAQUERY*/
+            /*MEDIAQUERY*/
+            /*MEDIAQUERY*/
+
+
+@media (min-width: 800px){
+  /*FORMATAÇÃO MENU*/
+   .nav {
+     padding: 1.5rem;
+     font-size: 2.5rem;
+     text-decoration: none;
+   }
+ 
+ }
+ 
+ @media (max-width: 768px){
+ /*INDEX.html*/
+ /*TEXTO PRINCIPAL*/
+   .macro-text{
+     font-size: 5.5rem;
+   }
+  /*TITULO NOSSOS SERVIÇOS*/
+   h2{
+     font-size: 5.5rem;
+   }
+
+            /* CONTATO */
+            /* CONTATO */
+            /* CONTATO */
+
+
+            .macro-text-contato {
+              font-size: 5.5rem;
+            }
+
+              /*SOBRE*/
+              /*SOBRE*/
+              /*SOBRE*/
+            .macro-text-sobre {
+              font-size: 5.5rem;
+
+ 
+ }
+ 
+ @media (max-width: 630px){
+ 
+ /*TEXTO PRINCIPAL*/
+   .macro-text{
+     font-size: 4.5rem;
+   }
+ 
+   /* Formatalçoes do email de contato */
+ .orcamento-txt {
+   font-size: 3.8rem;
+   color: var(--hover);
+   opacity: 0.8;
+   margin-top: 10rem;
+ }
+ 
+ }
+ 
+ @media (max-width: 560px){
+ 
+   /*FORMATAÇÃO MENU*/
+   .nav{
+     font-size: 1.7rem;
+     padding: 01rem;
+   }
+ 
+ 
+   /*TITULO NOSSOS SERVIÇOS*/
+   h2{
+     font-size: 4.5rem;
+   }
+ 
+   /* descrição do card */
+ 
+ .card-description-bottom{
+   text-align: center;
+   box-sizing: border-box;
+   font-size: 1.5rem;
+ 
+ }
+ 
+   /* descrição do card abaixo */
+ .card-description-abaixo{
+   text-align: center;
+   box-sizing: border-box;
+   font-size: 1.5rem;
+ }
+ 
+ /* titulo do card*/
+ .card-description-abaixo{
+   font-size: 2.5rem;
+   padding: 2rem;
+ }
+ 
+ }
+            /*CONTATO*/
+            /*CONTATO*/
+            /*CONTATO*/
+            /*CONTATO*/
+
+ .telEemail{
+
+  line-height: 2.5rem;
+ }
 }
