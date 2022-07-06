@@ -9,12 +9,11 @@
 /*é a raiz do documento HTML aplicada no CSS é oque possui a maior especificidade aqui podemos trabalhar com variaveis de cor sem usando ( -- )*/
 :root {
   --white: hsl(00, 100%, 100%);
-  --background-color: hsl(240, 28%, 81%);
   --hover: hsl(204, 47%, 49%);
   --menu-bar: hsl(258, 42%, 9%);
   --color-zap: hsl(113, 67%, 41%);
-  --color-button-services: hsl(244, 44%, 43%);
-  --card-border-color: hsl(0, 0%, 0%);
+  --bck-color-card: hsl(244, 46%, 32%);
+  --black: hsl(0, 0%, 0%);
   font-size: 62.5%; /* dentro destas condições de root 1rem = 10px */
   font-family: 'DM Sans', sans-serif;
 }
@@ -50,8 +49,10 @@ body {
 
 
 .menu{
-  margin: 2rem 0rem 7rem 0rem;
+  margin: 0.5rem 0rem 7rem 0rem;
   background-color: var(--menu-bar);
+  padding: 1.1rem;
+  border: 1px solid var(--hover)
 }
 
 .nav {
@@ -68,13 +69,6 @@ a:hover{
   color: var(--hover);
 }
 
-.macro-text {
-  font-size: 6.5rem;
-  padding: 0.2rem;
-  color: var(--hover);
-  opacity: 0.8;
-  text-transform:  uppercase;
-}
 
 h2{
   font-size: 6rem;
@@ -106,32 +100,29 @@ html{
 
 /* layout dos cards */
 .card {
-  height: 100%;
-  width: 100%;
-  max-width: 60rem;
-  max-height: 25rem;
-  margin: 10rem 1rem 10rem 1rem;
-  border: 1px solid var(--headline);
+  margin: 10rem 1rem 5rem 1rem;
+  border: 1px solid var(--hover);
+  background-color: var(--bck-color-card);
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--black);
+}
+
+/* Titulo dos cards */
+h4{
+  font-size: 2.5rem;
+}
+
+p{
+  /*CONTEUDO DE DESCRIÇÃO DOS CARDS*/
 }
 
 /* formatação da img dentro do card */
 .card img{
   width: 100%;
+  border-radius: 0.8rem;
 }
 
-/* descrição do card */
-.card-description{
-  font-size: 2.5rem;
-  padding: 2rem;
-}
 
-/* card-description-bottom */
-
-.card-description-bottom{
-  font-size: 1.8rem;
-  text-align: center;
-  box-sizing: border-box;
-}
 
             /* Area de serviços dos cards de baixo */
             /* Area de serviços dos cards de baixo */
@@ -150,17 +141,17 @@ html{
 
 /* layout dos cards-abaixo */
 .card-abaixo {
-  height: 100%;
-  width: 100%;
-  max-width: 60rem;
-  max-height: 25rem;
-  margin: 20rem 1rem 30rem 1rem;
-  border: 1px solid var(--headline);
+  margin: 5rem 1rem 15rem 1rem;
+  border: 1px solid var(--hover);
+  background-color: var(--bck-color-card);
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem var(--black);
 }
 
 /* formatação da img dentro do card-abaixo */
 .card-abaixo img{
   width: 100%;
+  border-radius: 0.8rem;
 }
 
 /* descrição do card-abaixo */
@@ -182,9 +173,28 @@ html{
 
 .whatsapp{
   position: fixed;
+  width: 32px;
   bottom: 1rem;
-  right: 2.5rem;
+  right: 1.5rem;
 }
+
+/*formatações de botão back to top*/
+.box-toTop{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.toTop img{
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width: 32px;
+  background-color: var(--color-zap);
+  border-radius: 0.8rem;
+}
+
+
 
 /* Formatalçoes do email de contato */
 
@@ -334,6 +344,23 @@ h3{
 }
 
 
+          /*Thanks Page*/
+          /*Thanks Page*/
+          /*Thanks Page*/
+          /*Thanks Page*/
+
+  h1{
+    font-size: 6rem;
+    color: var(--hover);
+    opacity: 0.8;
+    margin-top: 12%;
+    margin-bottom: 5rem;
+  }
+
+  h3{
+    font-size: 2rem;
+  }
+
             /*MEDIAQUERY*/
             /*MEDIAQUERY*/
             /*MEDIAQUERY*/
@@ -346,6 +373,16 @@ h3{
      padding: 1.5rem;
      font-size: 2.5rem;
      text-decoration: none;
+   }
+
+
+    /*CONTATO*/
+    /*CONTATO*/
+    /*CONTATO*/
+
+
+   .telEemail{
+    font-size: 2rem;
    }
  
  }
@@ -399,6 +436,17 @@ h3{
  .macro-text-sobre{
   font-size: 4.5rem;
  }
+
+          /*Thanks Page*/
+          /*Thanks Page*/
+
+          h1{
+            font-size: 4rem;
+          }
+
+          h3{
+            font-size: 1.8;
+          }
  
  }
  
