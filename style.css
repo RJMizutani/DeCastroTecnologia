@@ -202,7 +202,8 @@ p{
   font-size: 6rem;
   color: var(--hover);
   opacity: 0.8;
-  margin-top: 10rem;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
 }
 
 .email-contato{
